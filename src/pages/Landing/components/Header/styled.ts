@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderWrapper = styled.div`
+export const HeaderWrapper = styled.header`
   padding-top: 20px;
   margin: 0 auto;
   max-width: 1920px;
