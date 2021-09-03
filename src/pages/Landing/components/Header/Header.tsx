@@ -10,10 +10,10 @@ const Header: FC = () => {
     <S.HeaderWrapper>
       <S.SpecflixHeader>
         <Logo />
-        <div>
+        <S.HeaderButtonWrapper>
           <LanguageSelect />
           <LinkButton to={PATHS.BROWSE} label="Sign In" />
-        </div>
+        </S.HeaderButtonWrapper>
       </S.SpecflixHeader>
     </S.HeaderWrapper>
   );

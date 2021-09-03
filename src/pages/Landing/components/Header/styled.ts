@@ -7,6 +7,11 @@ export const HeaderWrapper = styled.header`
   height: 5rem;
 `;
 
+export const HeaderButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const SpecflixHeader = styled.div`
   display: flex;
   justify-content: space-between;
