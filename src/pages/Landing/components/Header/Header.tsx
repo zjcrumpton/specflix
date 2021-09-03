@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 
 import * as S from './styled';
 import { Logo, LinkButton } from '../../../../components';
+import { LanguageSelect } from './components';
 import { PATHS } from '../../../../navigation';
 
 const Header: FC = () => {
@@ -10,14 +11,7 @@ const Header: FC = () => {
       <S.SpecflixHeader>
         <Logo />
         <div>
-          <select name="language-select">
-            <option value="/" lang="en">
-              English
-            </option>
-            <option value="/us-es/" lang="es">
-              Español
-            </option>
-          </select>
+          <LanguageSelect />
           <LinkButton to={PATHS.BROWSE} label="Sign In" />
         </div>
       </S.SpecflixHeader>

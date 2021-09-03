@@ -11,6 +11,7 @@ export const SpecflixButton = styled.button`
   font-family: 'Kanit', sans-serif;
   font-size: 0.9rem;
   padding: 0.25rem 0.5rem;
+  cursor: pointer;
 
   @media (min-width: 550px) {
     font-size: 1rem;
