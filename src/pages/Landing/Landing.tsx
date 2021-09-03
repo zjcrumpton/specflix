@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 
-import { Header } from './components';
+import { Hero } from './components';
 
 const Landing: FC = () => {
   return (
     <div>
-      <Header />
+      <Hero />
     </div>
   );
 };
