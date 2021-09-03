@@ -11,5 +11,9 @@ export const SpecflixHeader = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 0.5rem;
-  margin: 0 56px;
+  margin: 0 5%;
+
+  @media (min-width: 550px) {
+    margin: 0 56px;
+  }
 `;

@@ -1,3 +1,5 @@
 import Logo from './Logo';
+import Button from './Button';
+import LinkButton from './LinkButton';
 
-export { Logo };
+export { Logo, Button, LinkButton };
