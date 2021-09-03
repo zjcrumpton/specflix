@@ -3,17 +3,17 @@ import styled from 'styled-components';
 export const SpecflixLogo = styled.h1`
   color: #0099d8;
   font-family: 'Kanit', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 
   @media (min-width: 550px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   @media (min-width: 950px) {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 
   @media (min-width: 1450px) {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 `;
