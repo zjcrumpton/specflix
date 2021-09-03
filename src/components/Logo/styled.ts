@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
+import * as STYLES from '../../styles/styles';
+
 export const SpecflixLogo = styled.h1`
-  color: #0099d8;
+  color: ${STYLES.PRIMARY};
   font-family: 'Kanit', sans-serif;
   font-size: 1.6rem;
 
