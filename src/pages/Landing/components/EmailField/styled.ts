@@ -80,11 +80,15 @@ interface LabelProps {
 }
 
 export const EmailInputInnerLabel = styled.label<LabelProps>`
-  font-size: 16px;
+  font-size: 14px;
   position: absolute;
   top: 40%;
   left: 10px;
   color: #8c8c8c;
+
+  @media (min-width: 750px) {
+    font-size: 16px;
+  }
 `;
 
 export const SubmitWrapper = styled.div`
