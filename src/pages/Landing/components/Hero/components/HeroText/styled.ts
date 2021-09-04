@@ -44,4 +44,5 @@ export const HeroPrompt = styled.h3`
   padding: 0 5%;
   margin: 0 auto;
   font-weight: 400;
+  padding-bottom: 20px;
 `;

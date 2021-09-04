@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 
 import * as S from './styled';
+import EmailField from '../../../EmailField';
 
 const HeroText: FC = () => {
   return (
@@ -11,6 +12,7 @@ const HeroText: FC = () => {
         <S.HeroPrompt>
           Ready to watch? Enter your email to create or restart your membership.
         </S.HeroPrompt>
+        <EmailField />
       </S.HeroForm>
     </S.HeroTextContainer>
   );
