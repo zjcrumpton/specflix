@@ -7,6 +7,27 @@ export const BackgroundWrapper = styled.div`
   right: 0;
   z-index: -1;
   overflow: hidden;
+  height: 522.4px;
+
+  @media (min-width: 550px) {
+    height: 767px;
+  }
+
+  @media (min-width: 575px) {
+    height: 712px;
+  }
+
+  @media (min-width: 740px) {
+    height: 738px;
+  }
+
+  @media (min-width: 740px) {
+    height: 710px;
+  }
+
+  @media (min-width: 1450px) {
+    height: 750.8px;
+  }
 `;
 
 export const BackgroundImg = styled.img`
