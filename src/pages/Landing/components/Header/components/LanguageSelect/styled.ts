@@ -6,9 +6,13 @@ export const LanguageSelectWrapper = styled.div`
   border-radius: 3px;
   border: 1px solid #aaaaaa;
   margin: 0 0.75rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   height: 100%;
   padding: 0 10px;
+
+  @media (min-width: 550px) {
+    margin-right: 2rem;
+  }
 `;
 
 export const Select = styled.select`
