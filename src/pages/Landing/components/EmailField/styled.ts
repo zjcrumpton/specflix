@@ -16,6 +16,13 @@ export const EmailFieldGrid = styled.ul`
   text-align: right;
   padding: 0;
   margin: 0;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 950px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 `;
 
 export const EmailInputWrapper = styled.li`
@@ -37,12 +44,12 @@ export const EmailInputPlacement = styled.div`
 `;
 
 export const EmailFieldInput = styled.input`
-  min-width: 500px;
-  height: 70px !important;
+  height: 48px;
+  min-width: 90vw;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   padding: 10px 10px 0;
-  width: 100%;
+  width: 100% !important;
   box-shadow: none;
   box-sizing: border-box;
   font-size: 16px;
@@ -53,6 +60,19 @@ export const EmailFieldInput = styled.input`
   color: #000;
   line-height: 40px;
   margin: 0;
+
+  @media (min-width: 550px) {
+    min-width: 450px;
+  }
+
+  @media (min-width: 750px) {
+    height: 60px;
+  }
+
+  @media (min-width: 1450px) {
+    min-width: 500px;
+    height: 70px !important;
+  }
 `;
 
 interface LabelProps {
@@ -83,7 +103,7 @@ export const SubmitButton = styled.button`
   border-top-left-radius: 0;
   border-left: 1px solid #333;
   font-size: 1.875rem;
-  min-height: 70px;
+  min-height: 40px;
   padding: 0 1em;
   display: inline-flex;
   align-items: center;
@@ -112,6 +132,14 @@ export const SubmitButton = styled.button`
   -webkit-appearance: button;
   text-transform: none;
   overflow: visible;
+
+  @media (min-width: 950px) {
+    min-height: 60px;
+  }
+
+  @media (min-width: 1450px) {
+    min-height: 70px;
+  }
 `;
 
 export const SubmitText = styled.span`
@@ -119,7 +147,15 @@ export const SubmitText = styled.span`
   -moz-box-flex: 1;
   flex: 1 1 auto;
   text-align: center;
-  font-size: 1.875rem;
+  font-size: 1rem;
   line-height: initial;
   color: #fff;
+
+  @media (min-width: 950px) {
+    font-size: 1.625rem;
+  }
+
+  @media (min-width: 1450px) {
+    font-size: 1.875rem;
+  }
 `;
