@@ -43,7 +43,12 @@ export const EmailInputPlacement = styled.div`
   position: relative;
 `;
 
-export const EmailFieldInput = styled.input`
+interface InputProps {
+  complete: boolean;
+  activeError: boolean;
+}
+
+export const EmailFieldInput = styled.input<InputProps>`
   height: 48px;
   min-width: 90vw;
   border-bottom-right-radius: 0;
@@ -53,13 +58,23 @@ export const EmailFieldInput = styled.input`
   box-shadow: none;
   box-sizing: border-box;
   font-size: 16px;
-  border: solid 1px #8c8c8c;
   border-radius: 2px;
   display: block;
   appearance: none;
   color: #000;
   line-height: 40px;
   margin: 0;
+
+  border: 1px solid #8c8c8c;
+  border-bottom: ${({ activeError, complete }) => {
+    if (activeError) {
+      return '2px solid #ffa00a';
+    } else if (complete) {
+      return '2px solid #5fa53f';
+    } else {
+      return '1px solid #8c8c8c';
+    }
+  }};
 
   @media (min-width: 550px) {
     min-width: 450px;

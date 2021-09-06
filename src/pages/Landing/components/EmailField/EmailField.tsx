@@ -19,6 +19,7 @@ const emailValidationRegex =
 const EmailField: FC = () => {
   const [focused, setFocused] = useState(false);
   const [email, setEmail] = useState('');
+  const [complete, setComplete] = useState(false);
   const [errMsg, setErrMsg] = useState<ErrorMsg>({
     visible: false,
     msg: errors.required,
@@ -35,11 +36,13 @@ const EmailField: FC = () => {
     const valid = emailValidationRegex.test(newEmail);
 
     if (valid) {
+      setComplete(true);
       setErrMsg({
         ...errMsg,
         visible: false,
       });
     } else {
+      setComplete(false);
       const newErr: ErrorMsg = {
         visible: true,
         msg: '',
@@ -63,6 +66,8 @@ const EmailField: FC = () => {
                   onBlur={unfocus}
                   onChange={validateEmail}
                   value={email}
+                  complete={complete}
+                  activeError={errMsg.visible}
                 />
                 <S.EmailInputInnerLabel for="hero_email" focused={focused}>
                   Email address
