@@ -77,17 +77,22 @@ export const EmailFieldInput = styled.input`
 
 interface LabelProps {
   for: string;
+  focused: boolean;
 }
 
 export const EmailInputInnerLabel = styled.label<LabelProps>`
-  font-size: 14px;
+  font-size: ${({ focused }) => (focused ? '5px' : '15px')};
+
   position: absolute;
-  top: 40%;
+  top: ${({ focused }) => (focused ? '10%' : '40%')};
   left: 10px;
   color: #8c8c8c;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease,
+    -webkit-transform 0.1s ease, -moz-transform 0.1s ease,
+    -o-transform 0.1s ease;
 
   @media (min-width: 750px) {
-    font-size: 16px;
+    font-size: ${({ focused }) => (focused ? '14px' : '16px')};
   }
 `;
 
