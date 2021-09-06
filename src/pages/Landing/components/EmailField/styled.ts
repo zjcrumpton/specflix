@@ -168,3 +168,16 @@ export const SubmitText = styled.span`
     font-size: 1.875rem;
   }
 `;
+
+interface ValidationProps {
+  visible: boolean;
+}
+
+export const ValidationMessage = styled.div<ValidationProps>`
+  display: ${({ visible }) => (visible ? 'block' : 'none')};
+  color: #ffa00a;
+  text-align: left;
+  margin-bottom: -6px;
+  padding: 6px 3px;
+  font-size: 15px;
+`;
