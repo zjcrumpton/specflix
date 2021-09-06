@@ -5,9 +5,11 @@ import * as S from './styled';
 interface IProps {
   title: string;
   body: string;
+  imgSrc: string;
+  vidSrc?: string;
 }
 
-const LandingContent: FC<IProps> = ({ title, body }) => {
+const LandingContent: FC<IProps> = ({ title, body, imgSrc, vidSrc }) => {
   return (
     <S.LandingSection>
       <S.SectionContent>
@@ -15,6 +17,16 @@ const LandingContent: FC<IProps> = ({ title, body }) => {
           <S.SectionTitle>{title}</S.SectionTitle>
           <S.SectionBody>{body}</S.SectionBody>
         </S.SectionText>
+        <S.SectionImageContainer>
+          <S.SectionAnimationContainer>
+            <S.SectionImage src={imgSrc} />
+            <S.Animation>
+              <S.Video autoPlay={true} loop={true}>
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" />
+              </S.Video>
+            </S.Animation>
+          </S.SectionAnimationContainer>
+        </S.SectionImageContainer>
       </S.SectionContent>
     </S.LandingSection>
   );

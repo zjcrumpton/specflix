@@ -75,3 +75,55 @@ export const SectionBody = styled.h2`
     text-align: left;
   }
 `;
+
+export const SectionImageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 0 1 auto;
+
+  @media (max-width: 950px) {
+    max-width: 600px;
+    margin-top: 1em;
+  }
+
+  @media (min-width: 950px) {
+    width: 48%;
+  }
+`;
+
+export const SectionAnimationContainer = styled.div`
+  margin: -10% 0 0 0;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 950px) {
+    margin: -10% -5% -5% 0;
+  }
+`;
+
+export const SectionImage = styled.img`
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+`;
+
+export const Animation = styled.div`
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const Video = styled.video`
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+`;
