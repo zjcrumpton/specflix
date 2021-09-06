@@ -22,7 +22,7 @@ const LandingContent: FC<IProps> = ({ title, body, imgSrc, vidSrc }) => {
             <S.SectionImage src={imgSrc} />
             <S.Animation>
               <S.Video autoPlay={true} loop={true}>
-                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" />
+                <source src={vidSrc} />
               </S.Video>
             </S.Animation>
           </S.SectionAnimationContainer>

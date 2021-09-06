@@ -34,6 +34,7 @@ const Landing: FC = () => {
             title="Watch everywhere."
             body="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more."
             imgSrc="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+            vidSrc="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
           />
         )}
       />
