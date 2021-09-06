@@ -51,8 +51,6 @@ interface InputProps {
 export const EmailFieldInput = styled.input<InputProps>`
   height: 48px;
   min-width: 90vw;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
   padding: 10px 10px 0;
   width: 100% !important;
   box-shadow: none;
@@ -64,6 +62,8 @@ export const EmailFieldInput = styled.input<InputProps>`
   color: #000;
   line-height: 40px;
   margin: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 
   border: 1px solid #8c8c8c;
   border-bottom: ${({ activeError, complete }) => {
@@ -123,8 +123,6 @@ export const SubmitWrapper = styled.div`
 
 export const SubmitButton = styled.button`
   margin: 0 !important;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
   border-left: 1px solid #333;
   font-size: 1.875rem;
   min-height: 40px;
@@ -156,6 +154,8 @@ export const SubmitButton = styled.button`
   -webkit-appearance: button;
   text-transform: none;
   overflow: visible;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 
   @media (min-width: 950px) {
     min-height: 60px;
