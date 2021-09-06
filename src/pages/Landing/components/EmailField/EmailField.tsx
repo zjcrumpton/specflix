@@ -1,9 +1,14 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 
 import * as S from './styled';
 import { VscChevronRight as RightArrowIcon } from 'react-icons/vsc';
 
 const EmailField: FC = () => {
+  const [focused, setFocused] = useState(false);
+
+  const focus = () => setFocused(true);
+  const unfocus = () => setFocused(false);
+
   return (
     <S.EmailFieldWrapper>
       <S.EmailFieldGrid>
@@ -11,8 +16,12 @@ const EmailField: FC = () => {
           <S.EmailInputContainer>
             <S.EmailInputPlacement>
               <label placeholder="email">
-                <S.EmailFieldInput id="hero_email" />
-                <S.EmailInputInnerLabel for="hero_email">
+                <S.EmailFieldInput
+                  id="hero_email"
+                  onFocus={focus}
+                  onBlur={unfocus}
+                />
+                <S.EmailInputInnerLabel for="hero_email" focused={focused}>
                   Email address
                 </S.EmailInputInnerLabel>
               </label>
