@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
 
 import { Hero } from './components';
+import { LandingElem } from '../../HOC';
 
 const Landing: FC = () => {
   return (
     <div>
-      <Hero />
+      <LandingElem Component={Hero} />
     </div>
   );
 };

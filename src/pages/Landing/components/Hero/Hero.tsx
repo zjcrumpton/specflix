@@ -12,14 +12,14 @@ const Hero: FC = () => {
   };
 
   return (
-    <section>
+    <S.HeroSection>
       <Header />
       <S.BackgroundWrapper>
         <S.BackgroundGradient />
         <S.BackgroundImg src={heroImg.src} srcSet={heroImg.srcSet} />
       </S.BackgroundWrapper>
       <HeroText />
-    </section>
+    </S.HeroSection>
   );
 };
 
