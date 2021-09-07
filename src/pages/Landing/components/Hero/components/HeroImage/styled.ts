@@ -33,7 +33,8 @@ export const BackgroundWrapper = styled.div`
 export const BackgroundImg = styled.img`
   object-fit: cover;
   transform: none;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid green;
+  min-height: 100%;
 `;
 
 export const BackgroundGradient = styled.div`
